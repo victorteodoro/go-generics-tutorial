@@ -17,19 +17,13 @@ func main() {
 		"2nd": 12.15,
 	}
 
-	strings := map[string]string{
-		"1st": "32",
-		"2nd": "12",
-	}
-
 	fmt.Printf("Non-generic sums: %v and %v.\n",
 		SumInts(ints),
 		SumFloats(floats))
 
-	fmt.Printf("Generic sums: %v and %v and %v.\n",
+	fmt.Printf("Generic sums: %v and %v.\n",
 		SumGeneric(ints),
-		SumGeneric(floats),
-		SumGeneric(strings))
+		SumGeneric(floats))
 }
 
 func SumInts(m map[string]int64) int64 {
